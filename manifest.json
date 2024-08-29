@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Zillow iFrame Injector",
+  "version": "1.0",
+  "description": "Injects an iframe on Zillow pages.",
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.zillow.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
+
