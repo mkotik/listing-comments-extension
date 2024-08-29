@@ -1,3 +1,4 @@
+console.log("hi");
 function injectOrRemoveIframe() {
   const currentUrl = window.location.href;
   const existingIframe = document.querySelector("iframe#zillow-iframe");
